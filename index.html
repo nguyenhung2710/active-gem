@@ -3,866 +3,282 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Quần Brief Boxer</title>
-        <meta name="description" content="Quần-Brief-Boxer">
+        <title>Áo Nỉ Active Gem</title>
+        <meta name="description" content="Áo Nỉ Active Gem">
         <link rel="shortcut icon" href="https://www.coolmate.me/images/favicon-96x96.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <!-- Reset css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-        <!-- Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&amp;display=swap" rel="stylesheet">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- Icon -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-        <!-- Slider -->
-        <link rel="stylesheet" href="assets/dist/lightslider.min.css">
-        <!-- Gallery -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css">
         <!-- Css -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-        <link rel="stylesheet" href="assets/dist/star-rating-svg.css">
+        <link rel="stylesheet" href="assets/dist/base.css">
+        <link rel="stylesheet" href="assets/dist/style.css">
         <link rel="stylesheet" href="assets/dist/main.css">
     </head>
     <body>
-        <header>
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/img/logo-coolmate.svg" alt="logo" class="header-logo">
+        <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <a class="navbar-logo" href="#">
+                        <img src="assets/img/logo.svg" alt="logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">SALES</a>
+                    <div class="navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home-page">TRANG CHỦ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tủ đồ Coolmate</a>
+                                <a class="nav-link" href="#description">MÔ TẢ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Áo thun</a>
+                                <a class="nav-link" href="#info">ĐẶC ĐIỂM</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Quần
-                                    <i class="fas fa-chevron-down"></i>
-                                </a>
+                                <a class="nav-link" href="#intro">GIỚI THIỆU</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tất vớ</a>
+                                <a class="nav-link" href="#service">DỊCH VỤ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Phụ kiện</a>
+                                <a class="nav-link" href="#product">SẢN PHẨM</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Chọn size</a>
+                                <a class="nav-link" href="#review">ĐÁNH GIÁ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Mặc đẹp sống chất</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <!-- <i class="fas fa-search"></i> -->
-                                    <img src="assets/icon/search.svg" alt="search">
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <!-- <i class="far fa-user"></i> -->
-                                    <img src="assets/icon/user.svg" alt="user">
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <div class="navbar_cart">
-                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 23.98"><title>Artboard 1</title><g id="Icon-svg-sprite"><path fill="currentColor" d="M19.46,4H14.84A4.94,4.94,0,0,0,5.16,4H.54A.55.55,0,0,0,0,4.52V23.43a.57.57,0,0,0,.16.39A.55.55,0,0,0,.54,24H19.46a.55.55,0,0,0,.38-.16.57.57,0,0,0,.16-.39V4.52A.55.55,0,0,0,19.46,4ZM10,1.09A3.84,3.84,0,0,1,13.72,4H6.28A4,4,0,0,1,7.65,1.89,3.84,3.84,0,0,1,10,1.09Zm8.91,21.8H1.09V5.06h4V7.3a.55.55,0,0,0,.54.55.55.55,0,0,0,.55-.55V5.06h7.68V7.3a.55.55,0,0,0,.55.55.55.55,0,0,0,.54-.55V5.06h4Z"></path></g></svg>
-                                        <p>Giỏ hàng</p>
-                                    </div>
-                                </a>
+                                <a class="nav-link" href="#price">ĐẶT HÀNG</a>
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </div>
             </div>
         </header>
-        <div class="main">
-            <div class="container">
-                <div class="row main-breadcrumb">
-                    <a href="#">Quần lót</a>
-                        >
-                    <a href="#">Quần Brief Boxer</a>
+        <div id="fullpage" class="fullpage-wrapper">
+            <div id="home-page" class="section-one">
+                <div class="grid">
+                    <div class="grid__column six-twelfths mobile--one-whole section-one__product">
+                        <div class="product__content">
+                            <h1 class="h1ag">Áo nỉ nam Active Gem giữ nhiệt màu đen - Black Passion</h1>
+                            <div class="product__price">
+                                <span>279,999₫</span>
+                                <span>
+                                    <strike>349,999₫</strike>
+                                </span>
+                            </div>
+                            <div class="product__descript">
+                                <p>Bạn có đang tìm kiếm cho mình một một chiếc áo dài tay ấm áp. Coolmate hiểu được điều
+                                    đó và đã nghiên cứu để gửi đến bạn một set đồ với thiết kế vừa vặn, vô cùng thoải
+                                    mái với chất liệu đặc biệt mềm mại. Và đó chính là <strong>áo nỉ Active Gem giữ nhiệt 
+                                    - hoàn hảo cho những ngày Chủ nhật thoải mái ở nhà, nhưng đủ tự tin để dạo phố cùng 
+                                    bạn bè.</strong>
+                                </p>
+                            </div>
+                            <div class="product__btn">
+                                <a href="#description">XEM THÊM</a>
+                                <a href="#">MUA NGAY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column six-twelfths mobile--one-whole img-sec1">
+                        <img src="assets/img/sec1.jpg" alt="sec1">
+                    </div>
                 </div>
-                <div class="row main-content">
-                    <div class="col-md-5 carousel">
-                        <!-- <div class="product_boxer">
-                            <img id="myImg" src="assets/img/Boxer.png" alt="boxer">
-                        </div> -->
-                        <div class="carousel__item">
-                            <img src="assets/img/image-37.png">
-                        </div>
-                        <div class="carousel__item">
-                            <img src="assets/img/image-13.png">
-                        </div>
-                        <div class="carousel__item">
-                            <img src="assets/img/image-13.png">
-                        </div>
-                        <div class="carousel__item">
-                            <img src="assets/img/image-13.png">
-                        </div>
-                        <div class="carousel__item">
-                            <img src="assets/img/image-13.png">
+            </div>
+            <div id="description" class="section-two">
+                <div class="grid">
+                    <div class="grid__column six-twelfths mobile--one-whole img-sec2">
+                        <img src="assets/img/sec2.jpg" alt="sec2">
+                    </div>
+                    <div class="grid__column six-twelfths mobile--one-whole section-two__product">
+                        <div class="product-content">
+                            <h2 class="h2ag">HÀNG VIỆT NAM LÀM TỪ vải nỉ mè cùng kiểu dệt Toshi</h2>
+                            <div class="product__descript">
+                                <p>Sự đặc biệt từ <strong>Áo nỉ Active Gem</strong> chính là nằm ở phần vải và công nghệ
+                                    dệt, <span class="descript__active">Coolmate</span> đã
+                                    dành rất nhiều thời gian từ chọn vải nhưng không tìm được loại vải phù hợp: nếu ấm
+                                    thì sẽ dễ bị xù lông, nếu ấm và không xù thì chiếc áo bạn mặc sẽ nặng và khó chịu vô
+                                    cùng,... chúng tôi đã bắt tay vào chọn những sợi vải nỉ đặc biệt nhất chính là
+                                    <strong>vải nỉ mè cùng kiểu dệt Toshi</strong> - sự kết hợp giữ kiểu dệt kim truyền
+                                    thống và kiểu dệt hạt mè hay dùng cho đồ thể thao.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-1 carousel-thumb">
-                        <img class="carousel-thumb__item" src="assets/img/image-37.png" alt="boxer red">
-                        <img class="carousel-thumb__item" src="assets/img/image-13.png" alt="boxer red">
-                        <img class="carousel-thumb__item" src="assets/img/image-13.png" alt="boxer red">
-                        <img class="carousel-thumb__item" src="assets/img/image-13.png" alt="boxer red">
-                        <img class="carousel-thumb__item" src="assets/img/image-13.png" alt="boxer red">
-                        <!-- <div class="thumb-img__item">
-                            <img class="demo cursor" src="assets/img/image-37.png" alt="boxer red">
-                        </div>
-                        <div class="thumb-img__item">
-                            <img class="demo cursor" src="assets/img/image-13.png" alt="boxer white">
-                        </div>
-                        <div class="thumb-img__item">
-                            <img class="demo cursor" src="assets/img/image-13.png" alt="boxer white ">
-                        </div>
-                        <div class="thumb-img__item">
-                            <img class="demo cursor" src="assets/img/image-13.png" alt="boxer white">
-                        </div>
-                        <div class="thumb-img__item">
-                            <img class="demo cursor" src="assets/img/image-13.png" alt="boxer white">
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 main-content__item">
-                        <h1 id="h1bb"><span class="cooler">COOLER</span> 3 quần Brief Boxer vải Bamboo (tre) kháng khuẩn</h1>
-                        <p class="body_color">Màu vàng, đen, trắng</p>
-                        <div class="body_review">
-                            <span>3.8/5</span>
-                            <span>
-                                <img src="assets/icon/star.png" alt="star">
-                            </span>
-                            <span>
-                                <a href="#">(Xem 6 đánh giá)</a>
-                            </span>
-                        </div>
-                        <div class="body_price">
-                            <span>490.000đ</span>
-                            <span><strike>755.000đ</strike></span>
-                            <span><strike>-30%</strike></span>
-                        </div>
-                        <div class="body_size">
-                            <span>Size: 
-                                <span class="main__size">L</span> 
-                                <!-- <span>(dưới 1m65, 50 - 60kg)</span> -->
-                            </span>
-                            <span>
-                                <a href="#">Hướng dẫn chọn size</a>
-                            </span>
-                        </div>
-                        <div class="body_size-modified">
-                            <!-- <span>M</span>
-                            <span class="size_active">L</span>
-                            <span>XL</span>
-                            <span>XXL</span> -->
-                            <form action="" method="get">
-                                <input class="select__size-m" type="button" value="M">
-                                <input class="select__size-l" type="button" value="L">
-                                <input class="select__size-xl" type="button" value="XL">
-                                <input class="select__size-xxl" type="button" value="XXL">
-                            </form>
-                        </div>
-                        <div class="body_select">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="body_num-order">
-                                        <p>Chọn số lượng: </p>
-                                        <div class="body_num-order--item">
-                                            <!-- <span>-</span>
-                                            <span>1</span>
-                                            <span>+</span> -->
-                                            <form action="" method="get">
-                                                <input type="button" value="-" class="down-item">
-                                                <input id="value-item" type="text" value="1">
-                                                <input type="button" value="+" class="up-item">
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="body_chat">
-                                        <img src="assets/icon/mess.svg" alt="chat">
-                                        <span>Chat</span>
-                                    </a>
+                </div>
+            </div>
+            <div id="info" class="section-three">
+                <div class="grid">
+                    <div class="grid__column six-twelfths mobile--one-whole section-three__product">
+                        <div class="product-content">
+                            <h2 class="h2ag">Đặc điểm sản phẩm</h2>
+                            <div class="product__descript">
+                                <div>
+                                    <img src="https://www.coolmate.me/images/checked.svg" alt="">
+                                    Chất liệu: 57% Cotton 38% Polyester 5% Spandex</div>
+                                <div>
+                                    <img src="https://www.coolmate.me/images/checked.svg" alt="">
+                                    Chất nỉ êm, mượt, đảm bảo không xù lông, không gây ngứa khó chịu</div>
+                                <div>
+                                    <img src="https://www.coolmate.me/images/checked.svg" alt="">
+                                    Phần cổ áo, bo tay và lai áo được thiết kế và sử dụng vải bo zip co giãn, không bai 
+                                    nhão, tiệp màu với vải chính</div>
+                                <div>
+                                    <img src="https://www.coolmate.me/images/checked.svg" alt="">Tay dài giữ nhiệt tốt
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="body_address">
-                                        <p>Chọn địa chỉ để biết thời gian nhận hàng:</p>
-                                        <div class="body_address--item">
-                                            <form action="" method="get">
-                                                <input class="address-item__active" type="button" value="TP. HCM">
+                                <div>
+                                    <img src="https://www.coolmate.me/images/checked.svg" alt="">
+                                    Form áo Regular Fit mặc gọn gàng không ôm sát hoặc quá rộng
+                                </div>
+                                <div>
+                                    <img src="https://www.coolmate.me/images/checked.svg" alt="">
+                                    Tự hào sản xuất tại Việt Nam
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column six-twelfths mobile--one-whole img-sec3">
+                        <img src="assets/img/sec3.jpg" alt="sec3">
+                    </div>
+                </div>
+            </div>
+            <div id="intro" class="section-four">
+                <div class="videoButton">
+                    <a class="playVideo" href="#">
+                        <img src="https://hstatic.net/548/1000067548/1000094815/playButton.png?v=387" alt="playVideo">
+                    </a>
+                </div>
+            </div>
+            <div id="service" class="section-five">
+                <div class="grid">
+                    <div class="grid__column six-twelfths mobile--one-whole section-five__product">
+                        <div class="product-content">
+                            <h2 class="h2ag">Sản phẩm đáng có nhất trong tủ đồ</h2>
+                            <div class="product__descript">
+                                <div>
+                                    <img src="assets/icon/New Project.png" width="2%" style="transform: scaleX(-1)"
+                                        alt="pin">
+                                    Phần bo zip được <strong>dệt và nhuộm cùng màu vải chính</strong> tạo <strong>màu
+                                    sắc đồng nhất</strong> cho bạn 1 outfit tự tin, thoải mái
+                                </div>
+                                <div>
+                                    <img src="assets/icon/New Project.png" width="2%" style="transform: scaleX(-1)"
+                                        alt="pin">
+                                    Những sản phẩm tại Coolmate dần chuyển sang <strong>sử dụng khoá kéo YKK</strong> -
+                                    loại khoá tốt nhất thế giới, đảm bảo độ bền đến khi bạn không thể mặc được nữa.
+                                </div>
+                                <div>
+                                    <img src="assets/icon/New Project.png" width="2%" style="transform: scaleX(-1)"
+                                        alt="pin">
+                                    Coolmate hiểu các bạn luôn muốn 1 chiếc áo, 1 chiếc quần không quá đơn giản và phần
+                                    logo được thêu mịn, không quá nổi bật <strong>cho bạn hơn sự đơn giản nhưng vẫn tinh
+                                    tế.</strong>
+                                </div>
+                                <div>
+                                    <img src="assets/icon/New Project.png" width="2%" style="transform: scaleX(-1)"
+                                        alt="pin">
+                                    <strong>Vải nỉ được hoàn thiện tốt,</strong> để chiếc áo luôn bền màu cùng độ sáng
+                                    trên vải ở mức tuyệt nhất.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column six-twelfths mobile--one-whole img-sec5">
+                        <img src="assets/img/sec5.jpg" alt="sec5">
+                    </div>
+                </div>
+            </div>
+            <div id="product" class="section-six">
+                <div class="grid">
+                    <div class="grid__column six-twelfths mobile--one-whole img-sec6">
+                        <div class="carousel">
+                            <div class="carousel__item">
+                                <img src="assets/img/sec1.jpg">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="assets/img/sec2.jpg">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="assets/img/sec3.jpg">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="assets/img/sec5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column six-twelfths mobile--one-whole section-seven__product">
+                        <div class="product-content">
+                            <h2 class="h2ag">ẢNH CỦA <br> BỘ SƯU TẬP</h2>
+                            <div class="product__descript">
+                                <p>Chất liệu 57% Cotton 38% Polyester 5% Spandex - Chất nỉ êm, đảm bảo không xù
+                                    lông - Tay dài giữ nhiệt tốt - Form áo mặc gọn gàng không ôm sát hoặc quá rộng</p>
+                            </div>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="review" class="section-seven"></div>
+        </div>
+        <footer>
+            <div id="price" class="section-eight">
+                <div class="grid">
+                    <div class="grid__column six-twelfths mobile--one-whole img-sec8">
+                        <img src="assets/img/sec8.jpg" alt="sec8">
+                    </div>
+                    <div class="grid__column six-twelfths mobile--one-whole section-five__product">
+                        <div class="product-content">
+                            <h2 class="h2ag">Đặt Hàng</h2>
+                            <div class="product__descript">
+                                <p>Nhận hàng nhanh Hà Nội, TP.Hồ Chí Minh, miễn phí vận chuyển cho đơn hàng từ 300k &
+                                    đổi trả miễn phí trong vòng 60 ngày</p>
+                                <form action="" method="get">
+                                    <div class="grid">
+                                        <div class="grid__column six-twelfths mobile--one-whole price__buy">
+                                            <label for="Number">Họ tên</label>
+                                            <input type="text" name="full_name" autofocus="" value="" required="">
+                                        </div><div class="grid__column six-twelfths mobile--one-whole price__buy">
+                                            <label for="Number">Số điện thoại</label>
+                                            <input type="number" name="phone" autofocus="" required="" value="">
+                                        </div>
+                                        <div class="grid__column six-twelfths mobile--one-whole price__buy">
+                                            <label for="Number">Số Lượng</label>
+                                            <input type="number" value="1">
+                                        </div>
+                                        <div class="grid__column six-twelfths mobile--one-whole price__buy">
+                                            <label for="Size">Kích Thước</label>
+                                            <div class="price__size">
+                                                <input class="size-item__active" type="button" value="Size M">
+                                                <input id="sizeM" class="size-item" type="button" value="Size M">
+                                                <input id="sizeXL" class="size-item" type="button" value="Size XL">
+                                                <input id="sizeXXL" class="size-item" type="button" value="Size XXL">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="grid__column four-twelfths mobile--one-whole price__buy">
+                                            <label for="Address">Địa Chỉ</label>
+                                            <div class="price__address">
+                                                <input class="address-item__active" type="button" value="Hà Nội">
                                                 <input id="addHn" class="address-item" type="button" value="Hà Nội">
                                                 <input id="addDn" class="address-item" type="button" value="Đà Nẵng">
                                                 <input id="addHcm" class="address-item" type="button" value="TP. HCM">
-                                            </form>
-                                            <span>
-                                                <i class="fas fa-angle-down"></i>
-                                                : Giao hàng trước <strong>14h</strong> hôm nay
-                                            </span>
+                                            </div>
+                                        </div> -->
+                                        <div class="grid__column price__note">
+                                            <label for="Note">Ghi chú thêm (Ví dụ: Giao hàng giờ hành chính)</label>
+                                            <textarea rows="6"></textarea>
                                         </div>
                                     </div>
-                                    <!-- <a href="#" class="body_buy">MUA SIZE L</a> -->
-                                    <div class="body_buy">
-                                        <form action="" method="get">
-                                            <input class="main-size__input" type="submit" value="MUA SIZE L">
-                                        </form>
+                                    <div class="price__submit">
+                                        <input type="submit" value="MUA NGAY">
                                     </div>
-                                </div>
+                                </form>
                             </div>
-                        </div>
-                        <div class="body_ship">
-                            <div class="body_ship--item">
-                                <span>
-                                    <img src="assets/icon/ship.png" alt="ship">
-                                </span>
-                                <span>
-                                    <p>Giao hàng <strong>4h</strong> HN & TP. HCM</p>
-                                </span>
-                            </div>
-                            <div class="body_ship--item">
-                                <span>
-                                    <img src="assets/icon/vn.png" alt="vn">
-                                </span>
-                                <span>
-                                    <p>Giao miễn phí đơn hàng từ 300k</p>
-                                </span>
-                            </div>
-                            <div class="body_ship--item">
-                                <span>
-                                    <img src="assets/icon/return.png" alt="return">
-                                </span>
-                                <span>
-                                    <p>Đổi trả miễn phí <span class="body_ship--active">45 ngày</span></p>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="body_info-product">
-                            <!-- Show -->
-                            <h5 class="h5bb">Đặc điểm sản phẩm: </h5>
-                            <div class="body_info-product--item">
-                                <span>
-                                    <img src="assets/icon/checked.png" alt="checked">
-                                </span>
-                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
-                            </div>
-                            <div class="body_info-product--item">
-                                <span>
-                                    <img src="assets/icon/checked.png" alt="checked">
-                                </span>
-                                <span>Vải Modal (bột gỗ sồi) mềm mịn, <strong>cực kì mát</strong></span>
-                            </div>
-                            <div class="body_info-product--item">
-                                <span>
-                                    <img src="assets/icon/checked.png" alt="checked">
-                                </span>
-                                <span>Không hằn da vì đai lưng dệt bằng công nghệ mới nhất Flat-out stream (May chỉ ngoài)</span>
-                            </div>
-                            <div class="body_info-product--item">
-                                <span>
-                                    <img src="assets/icon/checked.png" alt="checked">
-                                </span>
-                                <span>Sản xuất tại Việt Nam</span>
-                            </div>
-                            <!-- Hide -->
-                            <div class="body_info-product--item more-info-product">
-                                <span>
-                                    <img src="assets/icon/checked.png" alt="checked">
-                                </span>
-                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
-                            </div>
-                            <div class="body_info-product--item more-info-product">
-                                <span>
-                                    <img src="assets/icon/checked.png" alt="checked">
-                                </span>
-                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
-                            </div>
-                            <div class="body_info-product--item more-info-product">
-                                <span>
-                                    <img src="assets/icon/checked.png" alt="checked">
-                                </span>
-                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
-                            </div>
-                            <div class="body_info-product--item more-info-product">
-                                <span>
-                                    <img src="assets/icon/checked.png" alt="checked">
-                                </span>
-                                <span>Chất liệu 95% sợi Modal, 5% Spandex co giãn</span>
-                            </div>
-                        </div>
-                        <div class="body_more">
-                            <a class="body_more--item">
-                                <span>Xem thêm điểm nổi bật</span>
-                                <span>
-                                    <i class="fas fa-sort-down"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="body_error">
-                                <span>
-                                    <img src="assets/icon/error.png" alt="error">
-                                </span>
-                                <span>Góp ý, báo lỗi</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main-carousel">
-                    <h3 class="h3bb">Các mẫu quần lót nam tương tự</h3>
-                    <div class="carousel__item">
-                        <ul class="carousel__item-main">
-                            <a href="#">
-                                <li>
-                                    <img src="assets/img/slider-1.png" alt="slider-1">
-                                    <div class="carousel__item-main--price">
-                                        <span>490.000đ</span>
-                                        <span>755.000đ</span>
-                                    </div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <img src="assets/img/slider-2.png" alt="slider-2">
-                                    <div class="carousel__item-main--price">
-                                        <span>490.000đ</span>
-                                        <span>755.000đ</span>
-                                    </div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <img src="assets/img/slider-3.png" alt="slider-3">
-                                    <div class="carousel__item-main--price">
-                                        <span>490.000đ</span>
-                                        <span>755.000đ</span>
-                                    </div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <img src="assets/img/slider-4.png" alt="slider-4">
-                                    <div class="carousel__item-main--price">
-                                        <span>490.000đ</span>
-                                        <span>755.000đ</span>
-                                    </div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <img src="assets/img/slider-1.png" alt="slider-1">
-                                    <div class="carousel__item-main--price">
-                                        <span>490.000đ</span>
-                                        <span>755.000đ</span>
-                                    </div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <img src="assets/img/slider-2.png" alt="slider-2">
-                                    <div class="carousel__item-main--price">
-                                        <span>490.000đ</span>
-                                        <span>755.000đ</span>
-                                    </div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <img src="assets/img/slider-3.png" alt="slider-3">
-                                    <div class="carousel__item-main--price">
-                                        <span>490.000đ</span>
-                                        <span>755.000đ</span>
-                                    </div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <img src="assets/img/slider-4.png" alt="slider-4">
-                                    <div class="carousel__item-main--price">
-                                        <span>490.000đ</span>
-                                        <span>755.000đ</span>
-                                    </div>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class="carousel_more">
-                        <a href="#">Xem tất cả sản phẩm tương tự</a>
-                    </div>
-                </div>
-                <div class="row main-review">
-                    <div class="col-md-3 review__item">
-                        <div class="row review__item-30k">
-                            <div class="col-md-5 review__item-30k--img">
-                                <img src="assets/icon/review.png" alt="review">
-                            </div>
-                            <div class="col-md-7 review__item-30k--content">
-                                <p>Khen, chê sản phẩm đã mua thoải mái</p>
-                                <p>Nhận ngay 30.000đ.</p>
-                                <p>CoolMate lắng nghe để cải tiến liên tục. <a href="#">Tìm hiểu</a></p>
-                            </div>
-                            <a href="#" class="review__item-30k--now">Viết đánh giá ngay</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 review__item">
-                        <div class="review__item-rating">
-                            <div class="review__item-rating--bb1">
-                                <span>Đánh giá trung bình</span>
-                                <span>(6 đánh giá)</span>
-                            </div>
-                            <div class="review__item-rating--star">
-                                <span>3.8/5</span>
-                                <span>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2 review__item-rating--star-black">
-                                    <div>
-                                        <span>5 <i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span>4 <i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span>3 <i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span>2 <i class="fas fa-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span>1 <i class="fas fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 review__item-rating--progress">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 review__item-rating--percent">
-                                    <p>70%</p>
-                                    <p>30%</p>
-                                    <p>0%</p>
-                                    <p>0%</p>
-                                    <p>0%</p>
-                                </div>
-                                <div class="col-md-3 review__item-rating--bb2">
-                                    <p>
-                                        <a href="#">4 đánh giá</a>
-                                    </p>
-                                    <p>
-                                        <a href="#">2 đánh giá</a>
-                                    </p>
-                                    <p>0 đánh giá</p>
-                                    <p>0 đánh giá</p>
-                                    <p>0 đánh giá</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 review__item">
-                        <p>Theo tiêu chí <strong>từ 5 khách đã mua hàng</strong></p>
-                        <ul class="review__item-criteria">
-    
-                            <li>Vải có mát, thấm hút mồ hôi không?</li>
-                            <div class="review__item-criteria--cool">
-                                <a href="#">75% có</a>
-                                <div class="progress progress-mini">
-                                    <div class="progress-bar progress-bar__mini" role="progressbar" style="width: 60%" aria-valuenow="60"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <a href="#">25% không</a>
-                            </div>
-    
-                            <li>Mặc có thoải mái không?</li>
-                            <div class="review__item-criteria--cool">
-                                <a href="#">88% có</a>
-                                <div class="progress progress-mini">
-                                    <div class="progress-bar progress-bar__mini" role="progressbar" style="width: 75%" aria-valuenow="75"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <a href="#">12% không</a>
-                            </div>
-    
-                            <li>Có giữ dáng sau nhiều lần giặt không?</li>
-                            <div class="review__item-criteria--cool">
-                                <a href="#">88% có</a>
-                                <div class="progress progress-mini">
-                                    <div class="progress-bar progress-bar__mini" role="progressbar" style="width: 75%" aria-valuenow="75"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <a href="#">12% không</a>
-                            </div>
-    
-                        </ul>
-                    </div>
-                </div>
-                <div class="row main-photo">
-                    <div class="main-photo__title">
-                        <h2 class="h2bb">8 ảnh từ khách hàng</h2>
-                        <a id="more-img">Xem tất cả ảnh</a>
-                    </div>
-                    <div class="main-photo__slider">
-                        <div id="lightgallery" class="row">
-                            <!-- Show -->
-                            <a href="assets/img/gallery-1.png">
-                                <img src="assets/img/gallery-1.png">
-                            </a>
-                            <a href="assets/img/gallery-2.png">
-                                <img src="assets/img/gallery-2.png">
-                            </a>
-                            <a href="assets/img/gallery-3.png">
-                                <img src="assets/img/gallery-3.png">
-                            </a>
-                            <a href="assets/img/gallery-4.png">
-                                <img src="assets/img/gallery-4.png">
-                            </a>
-                            <a href="assets/img/gallery-5.png">
-                                <img src="assets/img/gallery-5.png">
-                            </a>
-                            <a href="assets/img/gallery-1.png">
-                                <img src="assets/img/gallery-1.png">
-                            </a>
-                            <a href="assets/img/gallery-2.png">
-                                <img src="assets/img/gallery-2.png">
-                            </a>
-                            <a href="assets/img/gallery-3.png">
-                                <img src="assets/img/gallery-3.png">
-                            </a>
-                            <!-- Hide -->
-                            <a class="more-gallery" href="assets/img/gallery-1.png">
-                                <img src="assets/img/gallery-1.png">
-                            </a>
-                            <a class="more-gallery" href="assets/img/gallery-2.png">
-                                <img src="assets/img/gallery-2.png">
-                            </a>
-                            <a class="more-gallery" href="assets/img/gallery-3.png">
-                                <img src="assets/img/gallery-3.png">
-                            </a>
-                            <a class="more-gallery" href="assets/img/gallery-4.png">
-                                <img src="assets/img/gallery-4.png">
-                            </a>
-                            <a class="more-gallery" href="assets/img/gallery-5.png">
-                                <img src="assets/img/gallery-5.png">
-                            </a>
-                            <a class="more-gallery" href="assets/img/gallery-1.png">
-                                <img src="assets/img/gallery-1.png">
-                            </a>
-                            <a class="more-gallery" href="assets/img/gallery-2.png">
-                                <img src="assets/img/gallery-2.png">
-                            </a>
-                            <a class="more-gallery" href="assets/img/gallery-3.png">
-                                <img src="assets/img/gallery-3.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main-cmt">
-                    <div class="write-cmt">
-                        <button class="write-cmt__bt">Viết đánh giá của bạn <i class="fas fa-edit"></i></button>
-                        <form action="" method="post" class="write-cmt__form">
-                            <div class="write__item">
-                                <label for="fullname">Họ &amp; Tên</label>
-                                <input type="text" placeholder="Nhập họ và tên..." class="" value="" required>
-                            </div>
-                            <div class="write__item">
-                                <label for="fullname">Địa chỉ Email</label>
-                                <input type="email" placeholder="Nhập địa chỉ email" class="" value="" required>
-                            </div>
-                            <div class="write__item">
-                                <label for="rating">Đánh giá</label>
-                                <div class="my-rating"></div>
-                            </div>
-                            <div class="write__item">
-                                <label for="message">Bình luận</label>
-                                <textarea name="message" class="" placeholder="Nhập bình luận của bạn..." required></textarea>
-                            </div>
-                            <div class="write__item">
-                                <button>Gửi đánh giá <i class="fas fa-long-arrow-alt-right"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="cmt-sort">Xếp theo: 
-                        <span class="cmt-sort__active">Đã mua & có hình trước <i class="fas fa-angle-down"></i></span>
-                    </div>
-                    <div class="user-cmt">
-                        <div class="user-cmt__item">
-                            <h4 class="h4bb">Tùng Jacob</h4>
-                            <div class="user-bought">
-                                <img src="assets/icon/check.svg" alt="check">
-                                <span>Đã mua tại Coolmate</span>
-                            </div>
-                            <div class="tag-feature">
-                                <span class="tag-feature__item">Mát, thấm hút mồ hôi</span>
-                                <span class="tag-feature__item">Mặt thoải mái</span>
-                                <span class="tag-feature__item">Giữ dáng khi giặt</span>
-                            </div>
-                        </div>
-                        <div class="user-cmt__item">
-                            <span>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <span>
-                                Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
-                                hàng đầu tiên này còn được tặng một cái thiệp tốt
-                            </span>
-                        </div>
-                        <div class="user-cmt__item">
-                            <a href="#">Hữu ích</a> •
-                            <a href="#">Trả lời</a> •
-                            <span>Gửi 2 ngày trước</span>
-                        </div>
-                        <div class="admin-cmt">
-                            <!-- Show -->
-                            <h4 class="h4bb">Xuân Lan <span class="badge admin-badge">Admin</span></h4>
-                            <p>Coolmate cảm ơn bạn đã tin dùng các sản phẩm của Coolmate. Hy vọng bạn sẽ có được những
-                                trải nghiệm tuyệt vời với các sản phẩm của chúng tôi và tiếp tục ủng hộ Coolmate trong
-                                thời gian tới. Chúc bạn luôn vui khoẻ</p>
-                            <div class="admin-cmt__item">
-                                <a href="#">Hữu ích</a> •
-                                <a href="#">Trả lời</a> •
-                                <span>Gửi 2 ngày trước</span>
-                            </div>
-                            <div class="admin-cmt__more">
-                                <a class="">Xem tiếp 3 trả lời <i class="fas fa-sort-down"></i></a>
-                            </div>
-                            <!-- Hide -->
-                            <div class="user-cmt__item user-cmt_hide">
-                                <h4 class="h4bb">Tùng Jacob</h4>
-                                <div class="user-bought">
-                                    <img src="assets/icon/check.svg" alt="check">
-                                    <span>Đã mua tại Coolmate</span>
-                                </div>
-                            </div>
-                            <div class="user-cmt__item user-cmt_hide">
-                                <span>
-                                    Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
-                                    hàng đầu tiên này còn được tặng một cái thiệp tốt
-                                </span>
-                            </div>
-                            <div class="user-cmt__item user-cmt_hide">
-                                <a href="#">Hữu ích</a> •
-                                <a href="#">Trả lời</a> •
-                                <span>Gửi 2 ngày trước</span>
-                            </div>
-                            <div class="user-cmt__item user-cmt_hide">
-                                <h4 class="h4bb">Tùng Jacob</h4>
-                                <div class="user-bought">
-                                    <img src="assets/icon/check.svg" alt="check">
-                                    <span>Đã mua tại Coolmate</span>
-                                </div>
-                            </div>
-                            <div class="user-cmt__item user-cmt_hide">
-                                <span>
-                                    Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
-                                    hàng đầu tiên này còn được tặng một cái thiệp tốt
-                                </span>
-                            </div>
-                            <div class="user-cmt__item user-cmt_hide">
-                                <a href="#">Hữu ích</a> •
-                                <a href="#">Trả lời</a> •
-                                <span>Gửi 2 ngày trước</span>
-                            </div>
-                            <div class="user-cmt__item user-cmt_hide">
-                                <h4 class="h4bb">Tùng Jacob</h4>
-                                <div class="user-bought">
-                                    <img src="assets/icon/check.svg" alt="check">
-                                    <span>Đã mua tại Coolmate</span>
-                                </div>
-                            </div>
-                            <div class="user-cmt__item user-cmt_hide">
-                                <span>
-                                    Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
-                                    hàng đầu tiên này còn được tặng một cái thiệp tốt
-                                </span>
-                            </div>
-                            <div class="user-cmt__item user-cmt_hide">
-                                <a href="#">Hữu ích</a> •
-                                <a href="#">Trả lời</a> •
-                                <span>Gửi 2 ngày trước</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user-cmt">
-                        <div class="user-cmt__item">
-                            <h4 class="h4bb">Tùng Jacob</h4>
-                            <div class="user__not-auth">
-                                <span>Chưa xác thực đã mua</span>
-                            </div>
-                            <div class="tag-feature">
-                                <span class="tag-feature__item">Mát, thấm hút mồ hôi</span>
-                                <span class="tag-feature__item">Mặt thoải mái</span>
-                                <span class="tag-feature__item">Giữ dáng khi giặt</span>
-                            </div>
-                        </div>
-                        <div class="user-cmt__item">
-                            <span>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <span>
-                                Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
-                                hàng đầu tiên này còn được tặng một cái thiệp tốt
-                            </span>
-                        </div>
-                        <div class="user-cmt__item">
-                            <a href="#">Hữu ích</a> •
-                            <a href="#">Trả lời</a> •
-                            <span>Gửi 2 ngày trước</span>
-                        </div>
-                    </div>
-                    <div class="user-cmt">
-                        <div class="user-cmt__item">
-                            <h4 class="h4bb">Tùng Jacob</h4>
-                            <div class="user__not-auth">
-                                <span>Chưa xác thực đã mua</span>
-                            </div>
-                            <div class="tag-feature">
-                                <span class="tag-feature__item">Mát, thấm hút mồ hôi</span>
-                                <span class="tag-feature__item">Mặt thoải mái</span>
-                                <span class="tag-feature__item">Giữ dáng khi giặt</span>
-                            </div>
-                        </div>
-                        <div class="user-cmt__item">
-                            <span>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <span>
-                                Không ngờ Coolmate giao hàng nhanh thế, mới đặt 30 phút sau đã nhận được. Lần đầu mua
-                                hàng đầu tiên này còn được tặng một cái thiệp tốt
-                            </span>
-                        </div>
-                        <div class="user-cmt__item">
-                            <a href="#">Hữu ích</a> •
-                            <a href="#">Trả lời</a> •
-                            <span>Gửi 2 ngày trước</span>
-                        </div>
-                    </div>
-                    <ul class="pagination pagination-lg num-page">
-                        <li class="page-item active" aria-current="page">
-                            <span class="page-link">
-                                1
-                                <span class="sr-only">(current)</span>
-                            </span>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    </ul>
-                </div>
-                <div class="row main-masonry">
-                    <div class="col-md-4 main-masonry__content">
-                        <img src="assets/img/Group-up.svg" alt="">
-                        <h4 class="h4bb">Khách hàng đã chia sẻ gì về #Coolmate</h4>
-                        <a href="#">Xem ngay</a>
-                        <img src="assets/img/Group-down.svg" alt="">
-                    </div>
-                    <div class="col-md-8 main-masonry__img">
-                        <img src="assets/img/Masonry.png" alt="masonry">
-                    </div>
-                </div>
-                <div class="row main-info">
-                    <div class="col-md-3 main-info__logo">
-                        <img src="assets/img/logo-footer.svg" alt="logo">
-                    </div>
-                    <div class="col-md-4 main-info__hotline">
-                        <p>GỌI MUA HÀNG, HỖ TRỢ (08:00 - 21:00)</p>
-                        <div class="main-info__hotline--item">
-                            <img src="assets/icon/phone.svg" alt="phone">
-                            <a href="tel: 1900272737">
-                                <span>1900.272737</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 main-info__social">
-                        <p>LIKE COOLMATE NHẬN ƯU ĐÃI MỖI NGÀY</p>
-                        <div class="main-info__social--img">
-                            <a href="#">
-                                <img src="assets/icon/fb.svg" alt="fb">
-                            </a>
-                            <a href="#">
-                                <img src="assets/icon/youtube.svg" alt="youtube">
-                            </a>
-                            <a href="#">
-                                <img src="assets/icon/insta.svg" alt="insta">
-                            </a>
-                            <a href="#">
-                                <img src="assets/icon/zalo.svg" alt="zalo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="footer__general">
-                <a href="#" class="general-active">Hướng dẫn chọn size</a> <span>|</span>
-                <a href="#">Chính sách đổi trả 45 ngày</a> <span>|</span>
-                <a href="#">Chính sách giao hàng</a> <span>|</span>
-                <a href="#">Câu chuyện về Coolmate</a> <span>|</span>
-                <a href="#">Góp ý, báo lỗi</a> <span>|</span>
-                <a href="#">Chính sách bảo mật & điều khoản sử dụng</a>
-            </div>
-            <div class="footer__company">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 footer__company--item">
-                            <p>© CÔNG TY CỔ PHẦN FASTECH ASIA</p>
-                            <p>Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư
-                                TP Hà Nội cấp lần đầu ngày 14/08/2018.</p>
-                        </div>
-                        <div class="col-md-6 footer__company--item">
-                            <img src="assets/img/bct.png" alt="bct">
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="assets/js/lightslider.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous"></script>
-        <!-- <script src="assets/js/main.js"></script> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="assets/js/jquery.star-rating-svg.js"></script>
-        <script src="assets/js/index.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

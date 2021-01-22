@@ -1,46 +1,63 @@
-// Slide
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
-
-// Slider
 jQuery(document).ready(function ($) {
-    $('.slider_item-main').lightSlider({
-        item: 4,
-        slideMove: 4,
-        speed: 600,
-        enableDrag: false,
-        // autoWidth:true,
-        //slideMargin: 0,
-        onSliderLoad: function () {
-            $('.slider_item-main').removeClass('cS-hidden');
+    // Smooth scroll
+    $("a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 500, function () {
+                window.location.hash = hash;
+            });
         }
     });
-    // $('#lightgallery').lightGallery({
-    //     thumbnail: true,
-    // }); 
-}); 
 
-//Gallery
-lightGallery(document.getElementById('lightgallery'));
+    //Change Address
+    $(function(){
+        $(".address-item__active").click(function(){
+            $(".address-item").toggle();
+        });
+        $("#addHn").click(function(){
+            $(".address-item__active").val('Hà Nội');
+            $(".address-item").hide();
+        });
+        $("#addDn").click(function(){
+            $(".address-item__active").val('Đà Nẵng');
+            $(".address-item").hide();
+        });
+        $("#addHcm").click(function(){
+            $(".address-item__active").val('TP. HCM');
+            $(".address-item").hide();
+        });
+    });
+
+    //Change Size
+    $(function(){
+        $(".size-item__active").click(function(){
+            $(".size-item").toggle();
+        });
+        $("#sizeM").click(function(){
+            $(".size-item__active").val('Size M');
+            $(".size-item").hide();
+        });
+        $("#sizeXL").click(function(){
+            $(".size-item__active").val('Size XL');
+            $(".size-item").hide();
+        });
+        $("#sizeXXL").click(function(){
+            $(".size-item__active").val('Size XXL');
+            $(".size-item").hide();
+        });
+    });
+
+    //Carousel
+    $(function() {
+        $('.carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            //asNavFor: '.carousel-thumb',
+        });
+    })
+});
