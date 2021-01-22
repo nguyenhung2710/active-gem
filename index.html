@@ -8,6 +8,7 @@
         <link rel="shortcut icon" href="https://www.coolmate.me/images/favicon-96x96.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <!-- Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/dist/base.css">
         <link rel="stylesheet" href="assets/dist/style.css">
         <link rel="stylesheet" href="assets/dist/main.css">
@@ -20,7 +21,9 @@
                         <img src="assets/img/logo.svg" alt="logo">
                     </a>
                     <button class="navbar-toggler">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon">
+                            <i class="fa fa-bars"></i>
+                        </span>
                     </button>
                     <div class="navbar-collapse">
                         <ul class="navbar-nav">
@@ -54,6 +57,18 @@
             </div>
         </header>
         <div id="fullpage" class="fullpage-wrapper">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 class="h3ag">HÃY ĐẾN VỚI CHÚNG TÔI</h3>
+                    <p>Giảm giá 15% cho đơn đặt hàng tiếp theo. Nhận thông báo về các chương trình khuyến
+                        mại đặc biệt khác</p>
+                    <form action="" method="post">
+                        <input type="email" placeholder="Nhập email của bạn" required>
+                        <input type="submit" value="Đăng ký">
+                    </form>
+                </div>
+            </div>
             <div id="home-page" class="section-one">
                 <div class="grid">
                     <div class="grid__column six-twelfths mobile--one-whole section-one__product">
@@ -190,22 +205,22 @@
             <div id="product" class="section-six">
                 <div class="grid">
                     <div class="grid__column six-twelfths mobile--one-whole img-sec6">
-                        <div class="carousel">
-                            <div class="carousel__item">
+                        <div class="carousel-sec6">
+                            <div class="carousel-sec6__item">
                                 <img src="assets/img/sec1.jpg">
                             </div>
-                            <div class="carousel__item">
+                            <div class="carousel-sec6__item">
                                 <img src="assets/img/sec2.jpg">
                             </div>
-                            <div class="carousel__item">
+                            <div class="carousel-sec6__item">
                                 <img src="assets/img/sec3.jpg">
                             </div>
-                            <div class="carousel__item">
+                            <div class="carousel-sec6__item">
                                 <img src="assets/img/sec5.jpg">
                             </div>
                         </div>
                     </div>
-                    <div class="grid__column six-twelfths mobile--one-whole section-seven__product">
+                    <div class="grid__column six-twelfths mobile--one-whole section-six__product">
                         <div class="product-content">
                             <h2 class="h2ag">ẢNH CỦA <br> BỘ SƯU TẬP</h2>
                             <div class="product__descript">
@@ -217,7 +232,82 @@
                     </div>
                 </div>
             </div>
-            <div id="review" class="section-seven"></div>
+            <div id="review" class="section-seven">
+                <div class="product-review">
+                    <h2 class="h2ag">Ý KIẾN - ĐÁNH GIÁ</h2>
+                    <div class="product__title">
+                        <p>KHÁCH HÀNG NÓI VỀ CHÚNG TÔI</p>
+                    </div>
+                    <div class="carousel-sec7">
+                        <div class="carousel-sec7__item">
+                            <div>
+                                <img src="assets/img/sec1.jpg">
+                            </div>
+                            <div>
+                                <p>Tôi hoàn toàn hài lòng với các sản phẩm mua tại Babylon, chất lượng rất tuyệt vời.
+                                Hơn nữa việc giao hàng và đặt hàng rất thuận tiện, nhanh chóng! </p>
+                                <h5 class="h5ag">Nguyễn Trung Lợi</h5>
+                                <p>Nhân viên thiết kế</p>
+                            </div>
+                        </div>
+                        <div class="carousel-sec7__item">
+                            <div>
+                                <img src="assets/img/sec2.jpg">
+                            </div>
+                            <div>
+                                <p>Tôi hoàn toàn hài lòng với các sản phẩm mua tại Babylon, chất lượng rất tuyệt vời.
+                                Hơn nữa việc giao hàng và đặt hàng rất thuận tiện, nhanh chóng! </p>
+                                <h5 class="h5ag">Nguyễn Trung Lợi</h5>
+                                <p>Nhân viên kĩ thuật</p>
+                            </div>
+                        </div>
+                        <div class="carousel-sec7__item">
+                            <div>
+                                <img src="assets/img/sec3.jpg">
+                            </div>
+                            <div>
+                                <p>Tôi hoàn toàn hài lòng với các sản phẩm mua tại Babylon, chất lượng rất tuyệt vời.
+                                Hơn nữa việc giao hàng và đặt hàng rất thuận tiện, nhanh chóng! </p>
+                                <h5 class="h5ag">Nguyễn Trung Lợi</h5>
+                                <p>Nhân viên văn phòng</p>
+                            </div>
+                        </div>
+                        <div class="carousel-sec7__item">
+                            <div>
+                                <img src="assets/img/sec1.jpg">
+                            </div>
+                            <div>
+                                <p>Tôi hoàn toàn hài lòng với các sản phẩm mua tại Babylon, chất lượng rất tuyệt vời.
+                                Hơn nữa việc giao hàng và đặt hàng rất thuận tiện, nhanh chóng! </p>
+                                <h5 class="h5ag">Nguyễn Trung Lợi</h5>
+                                <p>Nhân viên thiết kế</p>
+                            </div>
+                        </div>
+                        <div class="carousel-sec7__item">
+                            <div>
+                                <img src="assets/img/sec2.jpg">
+                            </div>
+                            <div>
+                                <p>Tôi hoàn toàn hài lòng với các sản phẩm mua tại Babylon, chất lượng rất tuyệt vời.
+                                Hơn nữa việc giao hàng và đặt hàng rất thuận tiện, nhanh chóng! </p>
+                                <h5 class="h5ag">Nguyễn Trung Lợi</h5>
+                                <p>Nhân viên kĩ thuật</p>
+                            </div>
+                        </div>
+                        <div class="carousel-sec7__item">
+                            <div>
+                                <img src="assets/img/sec3.jpg">
+                            </div>
+                            <div>
+                                <p>Tôi hoàn toàn hài lòng với các sản phẩm mua tại Babylon, chất lượng rất tuyệt vời.
+                                Hơn nữa việc giao hàng và đặt hàng rất thuận tiện, nhanh chóng! </p>
+                                <h5 class="h5ag">Nguyễn Trung Lợi</h5>
+                                <p>Nhân viên văn phòng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div id="price" class="section-eight">
@@ -235,10 +325,10 @@
                                     <div class="grid">
                                         <div class="grid__column six-twelfths mobile--one-whole price__buy">
                                             <label for="Number">Họ tên</label>
-                                            <input type="text" name="full_name" autofocus="" value="" required="">
+                                            <input type="text" name="full_name" value="" required="">
                                         </div><div class="grid__column six-twelfths mobile--one-whole price__buy">
                                             <label for="Number">Số điện thoại</label>
-                                            <input type="number" name="phone" autofocus="" required="" value="">
+                                            <input type="number" name="phone" required="" value="">
                                         </div>
                                         <div class="grid__column six-twelfths mobile--one-whole price__buy">
                                             <label for="Number">Số Lượng</label>

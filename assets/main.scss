@@ -42,7 +42,82 @@
     }
     &-collapse {
         font-weight: 500;
+        display: none;
     }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .4);
+    .h3ag {
+        color: #fff;
+        font-size: 1.22rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    &-content {
+        background: url("../img/modal.png") no-repeat;
+        margin: 26px auto;
+        border: 1px solid #888;
+        width: 55%;
+        height: 71%;
+        padding: 72px 412px 0 60px;
+        text-align: center;
+        background-size: 100%;
+        text-align: justify;
+        position: relative;
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            input {
+                text-align: center;
+                border: none;
+                margin-bottom: 15px;
+                height: 6vh;
+                &:nth-child(2) {
+                    color: #fff;
+                    background-color: #333;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover {
+                        background-color: var(--main-color);
+                    }
+                }
+            }
+        }
+        .close {
+            color: #000;
+            font-size: 28px;
+            position: absolute;
+            right: -30px;
+            top: -1px;
+            background-color: #fff;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover,
+            &:focus {
+                color: #fff;
+                background-color: #000;
+                border: 1px solid #fff;
+            }
+        }
+    }      
 }
 
 .section {
@@ -112,7 +187,7 @@
     &-two,
     &-three,
     &-five,
-    &-seven {
+    &-six {
         background: #fff;
         &__product {
             display: flex;
@@ -183,7 +258,7 @@
         &__product {
             padding: 0 !important;
         }
-        .carousel {
+        .carousel-sec6 {
             width: 50vw;
             height: 100vh;
             position: relative;
@@ -257,11 +332,68 @@
             }
         }
     }
-    &-seven {
+    &-six {
         &__product {
             .product {
                 &-content {
                     margin: auto 11rem auto 3rem;
+                }
+            }
+        }
+    }
+    &-seven {
+        width: 100vw;
+        height: 100vh;
+        //display: flex;
+        //align-items: center;
+        .product {
+            &-review {
+                padding-top: 10%;
+                text-align: center;
+                .carousel-sec7 {
+                    margin-top: 50px;
+                    &__item {
+                        &:focus {
+                            outline: none;
+                            border: none;
+                        }
+                        img {
+                            width: 20%;
+                            height: 12vh;
+                            outline: none;
+                            cursor: -webkit-grab;
+                            cursor: grab;
+                            object-fit: cover;
+                            display: flex;
+                            border-radius: 50%;
+                            &:active {
+                                cursor: -webkit-grabbing;
+                                cursor: grabbing;
+                            }
+                        }
+                        &:nth-child(2) {
+                            display: block;
+                        }
+                        div {
+                            padding: 0 30px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-weight: 300;
+                            &:nth-child(1) {
+                                margin-bottom: 20px;
+                            }
+                            &:nth-child(2) {
+                                .h5ag {
+                                    font-weight: 600;
+                                    @extend %descript;
+                                    &::before {
+                                        left: 45px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
