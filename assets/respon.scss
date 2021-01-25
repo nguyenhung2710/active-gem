@@ -357,6 +357,15 @@
     }
 
     .section {
+        &-two {
+            &__product  {
+                .product {
+                    &-content {
+                        margin: 0 3rem 0 2rem !important;
+                    }
+                }
+            }
+        }
         &-seven {
             .product {
                 &-review {

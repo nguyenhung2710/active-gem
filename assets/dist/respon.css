@@ -217,6 +217,9 @@
     padding: 67px 490px 0 75px !important;
   }
 
+  .section-two__product .product-content {
+    margin: 0 3rem 0 2rem !important;
+  }
   .section-seven .product-review {
     padding-top: 35% !important;
   }
