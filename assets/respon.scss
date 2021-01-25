@@ -19,11 +19,10 @@
             &::before {
                 content: "";
                 position: absolute;
-                width: 17vw;
+                width: 20vw;
                 height: 100vh;
-                right: -64px;
+                right: -74px;
                 top: 0;
-                background-color: #b9b9b95c;
                 //display: none;
             }
         }
@@ -56,7 +55,7 @@
 
     .img {
         &-sec1 {
-            height: 50vh !important;
+            height: 56.5vh !important;
             img {
                 height: auto !important;
             }
@@ -69,6 +68,7 @@
         }
         &-sec6 {
             height: 65vh !important;
+            margin-top: 4.6rem !important;
         }
     }
 
@@ -100,7 +100,7 @@
         }
         &-seven {
             padding-top: 8rem;
-            margin-bottom: -6rem;
+            margin-bottom: -5rem;
             .product {
                 &-review {
                     .carousel {
@@ -108,8 +108,9 @@
                             &__item {
                                 div {
                                     padding: 0 15px !important;
-                                    text-align: justify;
                                     height: 5vh;
+                                    width: 90%;
+                                    margin-left: 20px;
                                 }
                                 img {
                                     width: 17% !important;
@@ -178,7 +179,7 @@
             }
         }
         &-eight {
-            padding-top: 8rem;
+            padding-top: 9rem;
             .section {
                 &-five {
                     &__product {
@@ -233,11 +234,10 @@
             &::before {
                 content: "";
                 position: absolute;
-                width: 23.4vw;
+                width: 27vw;
                 height: 100vh;
-                right: -180px;
+                right: -190px;
                 top: 0;
-                background-color: #b9b9b95c;
             }
         }
         &-nav {

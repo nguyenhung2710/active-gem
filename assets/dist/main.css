@@ -7,7 +7,9 @@
 .h1ag {
   font-weight: 600;
   font-size: 2.45rem;
-  letter-spacing: -2px;
+  line-height: 40px;
+  text-align: initial;
+  width: 90%;
 }
 
 .h2ag {
@@ -137,8 +139,7 @@
   align-items: center;
 }
 .section-one__product .product__content {
-  margin: 0 4.7em;
-  text-align: justify;
+  margin: 0 4.6em;
   justify-content: center;
 }
 .section-one__product .product__price span:first-child {
@@ -179,9 +180,6 @@
 .section-two__product, .section-three__product, .section-five__product, .section-six__product {
   display: flex;
   align-items: center;
-}
-.section-two__product .product-content, .section-three__product .product-content, .section-five__product .product-content, .section-six__product .product-content {
-  text-align: justify;
 }
 .section-two__product .product__descript p span, .section-three__product .product__descript p span, .section-five__product .product__descript p span, .section-six__product .product__descript p span {
   color: var(--main-color);
@@ -372,6 +370,9 @@
 }
 .price__buy:nth-child(1) input:focus, .price__buy:nth-child(2) input:focus, .price__buy:nth-child(3) input:focus {
   border: 1px solid;
+}
+.price__buy:nth-child(4) {
+  flex-direction: column;
 }
 .price__size, .price__address, .price__note {
   display: flex;
