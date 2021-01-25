@@ -75,6 +75,9 @@ img {
   -webkit-transition: all 350ms ease-out;
   transition: all 350ms ease-out;
 }
+.nav-item {
+  padding-right: 20px;
+}
 
 @media (min-width: 992px) {
   .navbar-collapse {

@@ -192,6 +192,15 @@
 .section-three__product .product-content, .section-five__product .product-content {
   margin: 0 4.7em;
 }
+.section-three__product .product__descript div, .section-five__product .product__descript div {
+  display: flex;
+  margin-bottom: 15px;
+}
+.section-three__product .product__descript div img, .section-five__product .product__descript div img {
+  width: 2%;
+  height: 16px;
+  margin: 4px 8px 0 0;
+}
 .section-four {
   background: url("../img/sec4.jpg") no-repeat;
   background-size: auto;
@@ -447,6 +456,10 @@
 .img-sec1 img, .img-sec2 img, .img-sec3 img, .img-sec5 img, .img-sec6 img, .img-sec8 img {
   height: 100%;
   object-fit: cover;
+}
+
+.img-sec3 img, .img-sec5 img {
+  float: right;
 }
 
 .section-one__product .product__btn a:first-child:hover, .section-one__product .product__btn a:last-child, .price__submit input, .price__size input:nth-child(2):hover, .price__size input:nth-child(3):hover, .price__size input:nth-child(4):hover, .price__address input:nth-child(2):hover, .price__address input:nth-child(3):hover, .price__address input:nth-child(4):hover {

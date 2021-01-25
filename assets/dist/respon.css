@@ -58,11 +58,11 @@
     display: none;
   }
   .img-sec6 {
-    height: 55vh !important;
+    height: 65vh !important;
   }
 
   .section-one__product .product__content {
-    margin: 0 1.5em !important;
+    margin: 1rem 1.5em 0 !important;
     height: 100vh !important;
   }
   .section-two__product .product-content, .section-three__product .product-content, .section-five__product .product-content {
@@ -73,8 +73,8 @@
     margin: 0 15px !important;
   }
   .section-seven {
-    height: 72vh !important;
-    padding-top: 40px;
+    padding-top: 8rem;
+    margin-bottom: -6rem;
   }
   .section-seven .product-review .carousel-sec7__item div {
     padding: 0 15px !important;
@@ -85,22 +85,14 @@
     width: 17% !important;
     height: 7vh !important;
   }
-  .section-one__product {
-    height: 90vh;
-  }
   .section-two__product {
     margin-bottom: -90px;
-    height: 75vh;
-  }
-  .section-three__product {
-    height: 65vh;
   }
   .section-five__product {
-    height: 77vh;
     margin-bottom: 40px;
   }
   .section-six .carousel-sec6 .slick-prev, .section-six .carousel-sec6 .slick-next {
-    bottom: 1.5rem !important;
+    bottom: -6.5rem !important;
   }
   .section-six .carousel-sec6 .slick-prev {
     right: 7.6rem !important;
@@ -121,6 +113,9 @@
   .section-six__product .product-content {
     margin: 20px 25px auto !important;
   }
+  .section-eight {
+    padding-top: 8rem;
+  }
   .section-eight .section-five__product .product-content {
     height: 95vh;
   }
@@ -130,7 +125,7 @@
     transform: translateX(10px) !important;
   }
   .carousel-sec7 .slick-list {
-    height: 32vh;
+    height: 50vh;
   }
 }
 @media screen and (min-width: 740px) and (max-width: 1023px) {
@@ -209,6 +204,10 @@
   }
   .navbar-collapse::before {
     display: none;
+  }
+
+  .nav-item {
+    padding-right: 0 !important;
   }
 
   .modal-content {
