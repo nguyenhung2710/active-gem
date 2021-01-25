@@ -1,5 +1,9 @@
 //Mobile
 @media screen and (max-width: 739px) {
+    .h2ag {
+        font-size: 2.1rem !important;
+    }
+
     .navbar {
         &-logo {
             width: 40% !important;
@@ -12,6 +16,19 @@
             top: 0;
             background-color: #fff;
             left: -15px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 17vw;
+                height: 100vh;
+                right: -64px;
+                top: 0;
+                background-color: #b9b9b95c;
+                //display: none;
+            }
+        }
+        &-toggler {
+            display: block !important;
         }
         &-nav {
             width: 70vw !important;
@@ -35,6 +52,24 @@
 
     .modal {
         display: none !important;
+    }
+
+    .img {
+        &-sec1 {
+            height: 50vh !important;
+            img {
+                height: auto !important;
+            }
+        }
+        &-sec2,
+        &-sec3,
+        &-sec5,
+        &-sec8 {
+            display: none;
+        }
+        &-sec6 {
+            height: 55vh !important;
+        }
     }
 
     .section {
@@ -63,12 +98,225 @@
                 }
             }
         }
+        &-seven {
+            height: 72vh !important;
+            padding-top: 40px;
+            .product {
+                &-review {
+                    .carousel {
+                        &-sec7 {
+                            &__item {
+                                div {
+                                    padding: 0 15px !important;
+                                    text-align: justify;
+                                    height: 5vh;
+                                }
+                                img {
+                                    width: 17% !important;
+                                    height: 7vh !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-one {
+            &__product {
+                height: 90vh;
+            }
+        }
+        &-two {
+            &__product {
+                margin-bottom: -90px;
+                height: 75vh;
+            }
+        }
+        &-three {
+            &__product {
+                height: 65vh;
+            }
+        }
+        &-five {
+            &__product {
+                height: 77vh;
+                margin-bottom: 40px;
+            }
+        }
+        &-six {
+            .carousel {
+                &-sec6 {
+                    .slick {
+                        &-prev,
+                        &-next {
+                            bottom: 1.5rem !important;
+                        }
+                        &-prev {
+                            right: 7.6rem !important;
+                        }
+                        &-next {
+                            right: 3.8rem !important;
+                        }
+                    }
+                    &__item {
+                        width: 100vw !important;
+                        img {
+                            object-fit: contain !important;
+                            height: auto !important;
+                        }
+                    }
+                }
+            }
+            &__product {
+                height: 45vh;
+                .product {
+                    &-content {
+                        margin: 20px 25px auto !important;
+                    }
+                }
+            }
+        }
+        &-eight {
+            .section {
+                &-five {
+                    &__product {
+                        .product {
+                            &-content {
+                                height: 95vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .carousel {
+        &-sec6 {
+            .slick {
+                &-list {
+                    width: 100vw;
+                    transform: translateX(10px) !important;
+                }
+            }
+        }
+        &-sec7 {
+            .slick {
+                &-list {
+                    height: 32vh;
+                }
+            }
+        }
     }
 }
 
 //Tablet 
 @media screen and (min-width: 740px) and (max-width: 1023px) {
-    
+    .navbar {
+        &-toggler {
+            display: block !important;
+            width: 10% !important;
+        }
+        &-logo {
+            width: 25% !important;
+            margin-right: 0 !important;
+        }
+        &-collapse {
+            position: absolute;
+            flex-direction: column;
+            height: 100vh;
+            top: 0;
+            background-color: #fff;
+            left: -15px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 23.4vw;
+                height: 100vh;
+                right: -180px;
+                top: 0;
+                background-color: #b9b9b95c;
+            }
+        }
+        &-nav {
+            width: 70vw !important;
+            justify-content: space-between !important;
+            height: 60vh !important;
+            flex-direction: column;
+            align-items: flex-start !important;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-top: 30px;
+            margin-left: 50px;
+            .nav {
+                &-item {
+                    border-bottom: 1px solid #d4d4d4;
+                    width: 80%;
+                    padding-bottom: 19px;
+                }
+            }
+        }
+    }
+    .section {
+        &-one {
+            .section {
+                &-one {
+                    &__product {
+                        .product {
+                            &__content {
+                                margin: auto 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-two {
+            &__product {
+                .product {
+                    &-content {
+                        margin-right: 3rem !important;
+                        margin-left: 1rem !important;
+                    }
+                }
+            }
+        }
+        &-three,
+        &-five {
+            &__product {
+                .product {
+                    &-content {
+                        margin: 0 1.7em !important;
+                    }
+                }
+            }
+        }
+        &-six {
+            &__product {
+                .product {
+                    &-content {
+                        margin: auto 6rem auto 3rem !important;
+                    }
+                }
+            }
+        }
+        &-seven {
+            .product {
+                &-review {
+                    padding-top: 30% !important;
+                    .carousel {
+                        &-sec7 {
+                            &__item {
+                                img {
+                                    width: 38% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 //Ipad pro + laptop 
@@ -80,6 +328,14 @@
     .navbar {
         &-logo {
             margin-right: 8rem !important;
+        }
+        &-toggler {
+            display: none;
+        }
+        &-collapse {
+            &::before {
+                display: none;
+            }
         }
     }
 
@@ -126,9 +382,13 @@
 
     .modal {
         &-content {
-            padding: 108px 625px 0 92px !important;
+            //padding: 108px 625px 0 92px !important;
+            //padding: 8rem 37.7rem 0 5.5rem !important;
             height: 57% !important;
             margin: 174px auto !important;
+            div {
+                margin-left: 5rem !important;
+            }
             .close {
                 font-size: 50px !important;
                 right: -50px !important;
@@ -164,6 +424,18 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+//4k
+@media screen and (min-width: 2560px) {
+    .modal {
+        &-content {
+            div {
+                margin-left: 60px;
+                margin-top: 60px;
             }
         }
     }

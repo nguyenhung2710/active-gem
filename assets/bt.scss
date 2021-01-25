@@ -53,17 +53,8 @@ img {
         white-space: nowrap;
     }
     &-toggler {
-        display: none;
-        &-icon {
-            //background-image: ;
-            display: inline-block;
-            width: 1.5em;
-            height: 1.5em;
-            vertical-align: middle;
-            content: "";
-            background: no-repeat center center;
-            background-size: 100% 100%;
-        }
+        //display: none;
+        border: none;
     }
     &-collapse {
         -ms-flex-preferred-size: 100%;

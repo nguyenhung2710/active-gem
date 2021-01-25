@@ -41,6 +41,17 @@
   font-weight: 500;
   display: none;
 }
+.navbar-toggler {
+  display: none;
+  width: 16%;
+  background-color: transparent;
+}
+.navbar-toggler img {
+  background-color: transparent;
+}
+.navbar-toggler img:hover {
+  filter: invert(48%) sepia(86%) saturate(3679%) hue-rotate(2deg) brightness(100%) contrast(100%);
+}
 
 .modal {
   display: none;
@@ -68,11 +79,14 @@
   border: 1px solid #888;
   width: 55%;
   height: 71%;
-  padding: 72px 412px 0 60px;
   text-align: center;
   background-size: 100%;
   text-align: justify;
   position: relative;
+}
+.modal-content div {
+  width: 20vw;
+  margin: 5rem 0 0 3.6rem;
 }
 .modal-content form {
   display: flex;
@@ -322,9 +336,19 @@
 }
 .section-seven .product-review .carousel-sec7__item div:nth-child(2) .h5ag {
   font-weight: 600;
+  position: relative;
+  margin-top: 25px;
+  padding-top: 25px;
 }
 .section-seven .product-review .carousel-sec7__item div:nth-child(2) .h5ag::before {
-  left: 45px !important;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #CCC;
+  position: absolute;
+  top: 0px;
+  left: 45px;
 }
 
 .price__buy:nth-child(1), .price__buy:nth-child(2), .price__buy:nth-child(3) {
@@ -430,12 +454,12 @@
   background-color: var(--main-color);
 }
 
-.section-one__product .product__descript, .section-two__product .product__descript, .section-three__product .product__descript, .section-five__product .product__descript, .section-six__product .product__descript, .section-seven .product-review .carousel-sec7__item div:nth-child(2) .h5ag {
+.section-one__product .product__descript, .section-two__product .product__descript, .section-three__product .product__descript, .section-five__product .product__descript, .section-six__product .product__descript {
   position: relative;
   margin-top: 25px;
   padding-top: 25px;
 }
-.section-one__product .product__descript::before, .section-two__product .product__descript::before, .section-three__product .product__descript::before, .section-five__product .product__descript::before, .section-six__product .product__descript::before, .section-seven .product-review .carousel-sec7__item div:nth-child(2) .h5ag::before {
+.section-one__product .product__descript::before, .section-two__product .product__descript::before, .section-three__product .product__descript::before, .section-five__product .product__descript::before, .section-six__product .product__descript::before {
   content: "";
   display: block;
   width: 50px;
