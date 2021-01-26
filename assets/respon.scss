@@ -57,7 +57,9 @@
         &-sec1 {
             height: 56.5vh !important;
             img {
-                height: auto !important;
+                transform: translateX(10px);
+                object-fit: cover;
+                width: 100vw;
             }
         }
         &-sec2,
@@ -151,20 +153,21 @@
                         &-prev,
                         &-next {
                             //bottom: 1.5rem !important;
-                            bottom: -6.5rem !important;
+                            bottom: -22.5rem !important;
                         }
                         &-prev {
-                            right: 7.6rem !important;
+                            right: 20.6rem !important;
                         }
                         &-next {
-                            right: 3.8rem !important;
+                            right: 16.8rem !important;
                         }
                     }
                     &__item {
                         width: 100vw !important;
                         img {
-                            object-fit: contain !important;
-                            height: auto !important;
+                            height: 100% !important;
+                            //width: 100vw !important;
+                            transform: translateX(0px);
                         }
                     }
                 }

@@ -1,5 +1,5 @@
 @import url("respon.css");
-@import url("bt.css");
+@import url("style.css");
 :root {
   --main-color: #FA6400;
 }
@@ -229,8 +229,6 @@
   padding: 0 !important;
 }
 .section-six .carousel-sec6 {
-  width: 50vw;
-  height: 100vh;
   position: relative;
 }
 .section-six .carousel-sec6 .slick-prev, .section-six .carousel-sec6 .slick-next {

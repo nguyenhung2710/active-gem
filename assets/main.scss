@@ -1,6 +1,6 @@
 // Responsive
 @import url("respon.css");
-@import url("bt.css");
+@import url("style.css");
 
 :root {
     --main-color: #FA6400;
@@ -287,8 +287,8 @@
             padding: 0 !important;
         }
         .carousel-sec6 {
-            width: 50vw;
-            height: 100vh;
+            // width: 50vw;
+            // height: 100vh;
             position: relative;
             .slick {
                 &-prev,

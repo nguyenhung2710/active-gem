@@ -51,7 +51,9 @@
     height: 56.5vh !important;
   }
   .img-sec1 img {
-    height: auto !important;
+    transform: translateX(10px);
+    object-fit: cover;
+    width: 100vw;
   }
   .img-sec2, .img-sec3, .img-sec5, .img-sec8 {
     display: none;
@@ -93,20 +95,20 @@
     margin-bottom: 40px;
   }
   .section-six .carousel-sec6 .slick-prev, .section-six .carousel-sec6 .slick-next {
-    bottom: -6.5rem !important;
+    bottom: -22.5rem !important;
   }
   .section-six .carousel-sec6 .slick-prev {
-    right: 7.6rem !important;
+    right: 20.6rem !important;
   }
   .section-six .carousel-sec6 .slick-next {
-    right: 3.8rem !important;
+    right: 16.8rem !important;
   }
   .section-six .carousel-sec6__item {
     width: 100vw !important;
   }
   .section-six .carousel-sec6__item img {
-    object-fit: contain !important;
-    height: auto !important;
+    height: 100% !important;
+    transform: translateX(0px);
   }
   .section-six__product {
     height: 45vh;
